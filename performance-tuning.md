@@ -20,8 +20,9 @@ On a very high level, following are the four subsystems that needs to be monitor
 ######2. Run Queue
 
     Run queue indicates the total number of active processes in the current queue for CPU.
-    When CPU is ready to execute a process, it picks it up from the run queue based on the priority of the process.
-    Please note that processes that are in sleep state, or i/o wait state are not in the run queue.
+    When CPU is ready to execute a process, it picks it up from the run queue
+    based on the priority of the process.
+    Note that processes that are in sleep state, or i/o wait state are not in the run queue.
     So, a higher number of processes in the run queue can cause performance issues.
 
 ######3. Cpu Utilization
@@ -34,7 +35,9 @@ On a very high level, following are the four subsystems that needs to be monitor
 ######4. Load Average
 
     This indicates the average CPU load over a specific time period.
-    On Linux, load average is displayed for the last 1 minute, 5 minutes, and 15 minutes. This is helpful to see whether the overall load on the system is going up or down.
+    On Linux, load average is displayed for the last 1 minute, 5 minutes, 
+    and 15 minutes. This is helpful to see whether the overall load on the system
+    is going up or down.
     For example, a load average of “0.75 1.70 2.10″ indicates that the load on the system is coming down. 0.75 is the load average in the last 1 minute. 1.70 is the load average in the last 5 minutes. 2.10 is the load average in the last 15 minutes.
     Please note that this load average is calculated by combining both the total number of process in the queue, and the total number of processes in the uninterruptable task status.
 

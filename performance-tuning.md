@@ -8,10 +8,13 @@ On a very high level, following are the four subsystems that needs to be monitor
  
 ######1. Context Switch
 
-    When CPU switches from one process (or thread) to another, it is called as context switch.
-    When a process switch happens, kernel stores the current state of the CPU (of a process or thread) in the memory.
-    Kernel also retrieves the previously stored state (of a process or thread) from the memory and puts it in the CPU.
-    Context switching is very essential for multitasking of the CPU.
+    * When CPU switches from one process (or thread) to another, it is called as context switch.
+    * When a process switch happens, kernel stores the current state of the CPU (of a process or thread)
+    in the memory.
+    * Kernel also retrieves the previously stored state (of a process or thread) from the memory
+    and puts it in the CPU.
+    * Context switching is very essential for multitasking of the CPU.
+    
     However, a higher level of context switching can cause performance issues.
 
 ######2. Run Queue

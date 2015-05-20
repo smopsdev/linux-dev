@@ -53,7 +53,14 @@ On a very high level, following are the four subsystems that needs to be monitor
 
 ######Network - For network interfaces, the following metrics are more relevant 
     total number of packets (and bytes) received/sent through the interface, number of packets dropped. Also a good understanding of the TCP protocol.
-  
+ 
+ ###### Following is the 4 step approach to identify and solve a performance issue.
+
+    Step 1 – Understand (and reproduce) the problem: 
+    Step 2 – Monitor and collect data: Based on this data, come up list of potential issues.
+    Step 3 – Eliminate and narrow down issues: 
+    Step 4 – One change at a time: 
+
 
 #####2. Tuning Parameters
 #####3. Metrics
